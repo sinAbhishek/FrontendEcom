@@ -1,0 +1,242 @@
+.featured {
+  width: 100vw;
+}
+.pop {
+  font-family: "Arimo", sans-serif;
+  text-decoration-color: rgb(167, 154, 154);
+}
+.slidercont {
+  width: 80%;
+  margin: 100px auto 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
+  height: max-content;
+}
+.content {
+  /* margin: 20px 0px 50px 0; */
+
+  width: 400%;
+  height: max-content;
+  display: flex;
+  position: relative;
+  animation: 10s surf infinite;
+  /* transform: translateX(-25%); */
+}
+.content:hover {
+  animation-play-state: paused;
+}
+.des-img {
+  width: 100%;
+  height: 500px;
+  display: flex;
+
+  /* box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px; */
+}
+.desc {
+  text-align: center;
+
+  width: 50%;
+  height: 100%;
+}
+
+.target-img {
+  flex: 1;
+  width: 50%;
+  height: 100%;
+}
+.featImg {
+  width: 100%;
+  height: 100%;
+}
+
+.bgc1 {
+  background: rgb(255, 253, 251);
+  background: linear-gradient(
+    93deg,
+    rgba(255, 253, 251, 1) 0%,
+    rgba(205, 249, 202, 1) 100%,
+    rgba(184, 247, 181, 1) 100%
+  );
+}
+.bgc2 {
+  background: rgb(255, 253, 251);
+  background: linear-gradient(
+    93deg,
+    rgba(255, 253, 251, 1) 0%,
+    rgba(247, 194, 181, 1) 100%
+  );
+}
+.bgc3 {
+  background: rgb(255, 253, 251);
+  background: linear-gradient(
+    93deg,
+    rgba(255, 253, 251, 1) 0%,
+    rgba(247, 181, 211, 1) 100%
+  );
+}
+/* .bgc1 {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(226, 135, 67, 1) 0%,
+    rgba(227, 104, 110, 1) 100%,
+    rgba(230, 0, 255, 1) 100%
+  );
+}
+.bgc2 {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(172, 234, 98, 1) 0%,
+    rgba(189, 194, 102, 1) 0%,
+    rgba(180, 146, 89, 1) 0%,
+    rgba(186, 159, 102, 1) 0%,
+    rgba(195, 179, 121, 1) 1%,
+    rgba(170, 123, 67, 1) 49%,
+    rgba(147, 71, 17, 1) 100%,
+    rgba(227, 104, 216, 1) 100%,
+    rgba(230, 0, 255, 1) 100%
+  );
+}
+.bgc3 {
+  background: rgb(59, 122, 154);
+  background: linear-gradient(
+    90deg,
+    rgba(59, 122, 154, 1) 0%,
+    rgba(119, 103, 205, 1) 0%,
+    rgba(115, 60, 110, 1) 100%
+  );
+} */
+.heading1,
+.heading2,
+.heading3 {
+  padding-top: 150px;
+  font-size: 35px;
+  font-family: "Unbounded", cursive;
+  color: black;
+}
+.para1 {
+  padding-top: 10px;
+  font-size: 20px;
+  font-family: "Prompt", sans-serif;
+  color: black;
+}
+
+.para2 {
+  padding-top: 10px;
+  font-size: 20px;
+  font-family: "Prompt", sans-serif;
+  color: black;
+}
+
+.para3 {
+  padding-top: 10px;
+  font-size: 20px;
+  font-family: "Prompt", sans-serif;
+  color: black;
+}
+@keyframes surf {
+  0% {
+    left: 0;
+  }
+  30% {
+    left: 0;
+  }
+  40% {
+    left: -100%;
+  }
+  65% {
+    left: -100%;
+  }
+  75% {
+    left: -200%;
+  }
+  95% {
+    left: -200%;
+  }
+
+  100% {
+    left: -300%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .desc {
+    width: 50%;
+  }
+  .target-img {
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  .featImg {
+    width: 100%;
+    height: 70%;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .slidercont {
+    width: 90%;
+  }
+  .heading1,
+  .heading2,
+  .heading3 {
+    padding-top: 100px;
+    font-size: 30px;
+    font-family: "Unbounded", cursive;
+  }
+  .des-img {
+    height: 400px;
+  }
+  .para1,
+  .para2,
+  .para3 {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .heading1,
+  .heading2,
+  .heading3 {
+    padding-top: 80px;
+    font-size: 25px;
+    font-family: "Unbounded", cursive;
+  }
+  .para1,
+  .para2,
+  .para3 {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .content {
+    height: 40%;
+  }
+
+  .heading1,
+  .heading2 {
+    padding-top: 50px;
+    font-size: 18px;
+  }
+  .para1,
+  .para2 {
+    font-size: 12px;
+  }
+  .heading3 {
+    padding-top: 50px;
+    font-size: 16px;
+  }
+  .des-img {
+    height: 300px;
+  }
+  .para3 {
+    font-size: 10px;
+  }
+  .desc {
+    width: 50%;
+    height: 100%;
+  }
+}

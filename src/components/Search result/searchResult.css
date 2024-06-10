@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.itemname{
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+.key {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background: rgb(255,255,255);
+/* background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(220, 71, 71) 100%); */
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(141, 78, 78) 100%);
+  transition: ease-in-out 0.1s;
+  opacity: 0%;
+}
+.key:hover {
+  transform: scale(1.04);
+  transition: ease-in-out 0.1s;
+}
+.show {
+  opacity: 100%;
+  transition: 0.8s;
+}
+.show {
+}
+@media only screen and (max-width: 1000px) {
+  .image {
+    width: 110px;
+    height: 110px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .key {
+    min-width: 180px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .key {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    min-width: 180px;
+  }
+
+  .item-heading {
+    margin-left: 0.5rem;
+    width: 70%;
+  }
+  .itm-lnk {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .key {
+    min-width: 300px;
+  }
+}

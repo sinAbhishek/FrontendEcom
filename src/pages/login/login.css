@@ -1,0 +1,66 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.scaleelod {
+  margin: 0 auto;
+}
+.login-form > input {
+  font-family: "Ysabeau", sans-serif;
+  font-size: 1rem;
+  height: 1.8rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.login-form > button {
+  height: 2rem;
+  background-color: rgb(13, 224, 168);
+  color: white;
+  border: none;
+  border-radius: 0.2rem;
+}
+.login-form > button:hover {
+  cursor: pointer;
+}
+.login-input {
+  margin-bottom: 10px;
+  border-style: inherit;
+  border: 1px solid;
+}
+.log-h1 {
+  margin-bottom: 50px;
+  font-family: "Oswald", sans-serif;
+}
+.label-login {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.direct {
+  display: flex;
+  font-size: 1rem;
+  font-family: "Ysabeau", sans-serif;
+}
+.direct p {
+  font-size: 1rem;
+  font-family: "Ysabeau", sans-serif;
+  text-decoration: underline;
+  font-weight: bold;
+  color: rgb(5, 82, 169);
+}
+.direct1 {
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto 1rem;
+  font-family: "Ysabeau", sans-serif;
+}

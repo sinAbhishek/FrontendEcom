@@ -1,0 +1,59 @@
+/* .img-container {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  height: 75%;
+  margin-top: 50px;
+  border-radius: 20px;
+} */
+.item-price {
+  min-width: 320px;
+}
+.itm-h1 {
+  font-family: "Yeseva One", cursive;
+}
+.itm-p1 {
+  font-family: "Josefin Sans", sans-serif;
+}
+.qty {
+  font-family: "Lora", serif;
+}
+.price-itm2 {
+  font-family: "Lora", serif;
+}
+.size:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.checkout {
+  transition: 0.3s;
+}
+.checkout:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+@media only screen and (max-width: 950px) {
+  .item-container {
+    justify-content: space-between;
+    width: 90% !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .item-container {
+    flex-direction: column !important;
+  }
+  .Det-left {
+    flex-direction: row !important;
+    width: 100% !important;
+    justify-content: space-between !important;
+  }
+  .item-price {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .Det-left {
+    flex-direction: column !important;
+  }
+}

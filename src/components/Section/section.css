@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Rozha+One&family=Trirong:ital,wght@1,700&display=swap");
+
+.s1 {
+  background: rgb(8, 8, 8);
+
+  width: 100vw;
+  overflow: hidden;
+  height: 70vh;
+  margin-top: 60px;
+}
+/* .cspill {
+  width: 40rem;
+  height: 40rem;
+  transform: rotate(-0.08turn);
+} */
+.cbean {
+  width: 18rem;
+  height: 18rem;
+}
+.txtlog {
+  line-height: 4rem !important;
+  font-family: "Trirong", serif;
+}
+@media only screen and (max-width: 768px) {
+  .s1 {
+    height: 50vh;
+  }
+  .txtlog {
+    font-size: 2rem !important;
+    line-height: 3rem !important;
+  }
+  .cspill {
+    width: 30rem;
+    height: 30rem;
+  }
+  .cbean {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .txt12 {
+    font-size: 2rem !important;
+  }
+  .flex12 {
+  }
+  .cspill {
+    display: none;
+  }
+  .flex13 {
+    width: 50% !important;
+  }
+  .s1 {
+    height: 40vh;
+  }
+  .txtlog {
+    font-size: 1.2rem !important;
+    line-height: 2rem !important;
+  }
+}

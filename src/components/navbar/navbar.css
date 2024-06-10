@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+.Navbar {
+  height: 80px;
+  background-color: rgb(246, 240, 240);
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 25px 10px -20px;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
+.sub-total-h1{
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.chakra-modal__body {
+  padding: 0px !important;
+  background-color: rgb(243, 237, 230);
+}
+.alt-logo {
+  display: none;
+}
+.btn-checkout {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  transition: 0.5s;
+}
+.btn-checkout:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.icon {
+  color: #85491e;
+  margin-right: 10px;
+}
+.Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.logo {
+  font-family: "Pacifico", cursive;
+  font-size: 30px;
+  margin-left: 15px;
+}
+.left {
+  flex: 1;
+}
+.search {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  background-color: white;
+}
+.menu-logo {
+  display: flex;
+  flex: 2;
+}
+.cart-icon {
+  position: relative;
+  margin-right: 20px;
+}
+.cart-count {
+  position: absolute;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  top: 0px;
+  right: 0px;
+  font-size: 10px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.username {
+  display: inline;
+  color: aqua;
+  margin-top: 5px;
+}
+.home,
+.menu {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+.home:hover {
+  color: aqua;
+  transition: 1s;
+}
+.menu:hover {
+  color: aqua;
+  transition: 1s;
+}
+.home {
+  padding-right: 20px;
+}
+.navItems {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+.search button {
+  border-radius: 0px 10px 10px 0px;
+  background-color: green;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+}
+.buttons {
+  margin-right: 30px;
+}
+
+.logout {
+  background-color: black;
+  cursor: pointer;
+}
+.icon-logout {
+  color: #fffaf1;
+  height: 20px;
+  margin-left: 10px;
+}
+.userlogin {
+  display: flex;
+}
+.btn-log {
+  text-decoration: none;
+  background-color: #fffaf1;
+
+  font-weight: bold;
+  font-size: 15px;
+}
+@media only screen and (max-width: 450px) {
+  .buttons {
+    margin-right: 0px;
+  }
+  .cart-icon {
+    margin-right: 5px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .alt-logo {
+    display: block;
+  }
+  .logo {
+    display: none;
+  }
+}

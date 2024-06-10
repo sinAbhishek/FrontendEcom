@@ -1,0 +1,42 @@
+.registerMain {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.scale1lod {
+  margin: 0 auto;
+}
+.register-container {
+  display: flex;
+  flex-direction: column;
+}
+.register-container > input {
+  font-family: "Ysabeau", sans-serif;
+  font-size: 1rem;
+  height: 1.8rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-bottom: 10px;
+  border-style: inherit;
+  border: 1px solid;
+}
+.register-container > button {
+  height: 2rem;
+  background-color: rgb(13, 224, 168);
+  color: white;
+  border: none;
+  border-radius: 0.2rem;
+}
+.registerMain > h1 {
+  margin-bottom: 50px;
+  font-family: "Oswald", sans-serif;
+}
+.register-container > label {
+  color: red;
+  font-size: 0.8rem;
+  font-family: "Ysabeau", sans-serif;
+  font-style: italic;
+}
