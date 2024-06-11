@@ -36,9 +36,9 @@ const Footer = () => {
       <hr className="" />
       <div className=" flex justify-between h-1/5">
         <div className="flex w-1/2 justify-center items-center h-full">
-          <p className=" text-md text-slate-200 mr-2">Q/A</p>
-          <p className=" text-md text-slate-200 mr-2">Privacy</p>
-          <p className=" text-md text-slate-200">Contact</p>
+          <p className=" text-sm text-slate-200 mr-2">Q/A</p>
+          <p className=" text-sm text-slate-200 mr-2">Privacy</p>
+          <p className=" text-sm text-slate-200">Contact</p>
         </div>
         <div className=" w-1/2 flex justify-center items-center">
           <p className=" text-sm text-slate-200">Cafe Bites | 2023</p>
