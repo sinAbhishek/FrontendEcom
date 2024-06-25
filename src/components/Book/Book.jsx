@@ -4,7 +4,9 @@ import { BsTelephone } from "react-icons/bs";
 import { GoPerson } from "react-icons/go";
 import { BsCart3 } from "react-icons/bs";
 import "./book.css";
+import { redirect, useNavigate } from "react-router-dom";
 const Book = () => {
+  const navigate = useNavigate();
   return (
     <div className="bG h-[80vh] w-11/12 relative rounded-3xl">
       <div className=" bg-black opacity-40 absolute top-0 bottom-0 right-0 left-0 rounded-3xl z-0"></div>
@@ -36,7 +38,10 @@ const Book = () => {
                 placeholder="Your name "
               />
             </div> */}
-            <button className=" flex justify-center items-center w-max hover:scale-105 font-normal hover:bg-black hover:text-white transition duration-105 bg-transparent h-4/5 rounded-full px-4 py-2 text-slate-100 border border-white">
+            <button
+              onClick={() => navigate("/menu")}
+              className=" flex justify-center items-center w-max hover:scale-105 font-normal hover:bg-black hover:text-white transition duration-105 bg-transparent h-4/5 rounded-full px-4 py-2 text-slate-100 border border-white"
+            >
               Shop Now
               <BsCart3 color="white" size={"1.2rem"} className="mr-2" />
             </button>

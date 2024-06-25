@@ -61,7 +61,7 @@ const Navbar = () => {
     <div className="Navbar">
       <div className="Container">
         <div className="left">
-          <span className="logo text-gray-600">Cafe Bites</span>
+          <span className="logo text-slate-300">Cafe Bites</span>
           <div className="alt-logo">
             <GiCoffeeCup
               color="black"
@@ -81,7 +81,7 @@ const Navbar = () => {
 
         <div className="navItems">
           <div onClick={onOpen} className="cart-icon hover:cursor-pointer">
-            <BsCart3 color="black" size={"2rem"} className="mr-2" />
+            <BsCart3 color="white" size={"2rem"} className="mr-2" />
             {item_count ? <div className="cart-count">{item_count}</div> : null}
           </div>
 
@@ -102,8 +102,8 @@ const Navbar = () => {
               </div>
             ) : (
               <>
-                <button className="navButton w-max px-4 py-1 rounded-md bg-black hover:scale-105">
-                  <a className="btn-log bg-black text-white" href="/Login">
+                <button className="navButton w-max px-4 py-1 rounded-md bg-green-400 text-white hover:scale-105">
+                  <a className="btn-log " href="/Login">
                     Login
                   </a>
                 </button>

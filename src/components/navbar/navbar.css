@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 .Navbar {
   height: 80px;
   background-color: rgb(0, 0, 0);
@@ -10,6 +10,14 @@
   top: 0px;
   width: 100%;
   z-index: 1;
+}
+.menu-logo>a{
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+
+  font-style: normal;
 }
 .sub-total-h1{
   font-family: "Play", sans-serif;
@@ -133,7 +141,7 @@
 }
 .btn-log {
   text-decoration: none;
-  background-color: #fffaf1;
+
 
   font-weight: bold;
   font-size: 15px;
