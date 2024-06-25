@@ -1,23 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 .bG {
-  background-image: url("../../data/image/bookbg.png");
+  background-image: url("../../../public/table.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
+  background-attachment: fixed;
 }
-
-@media only screen and (max-width: 630px) {
+.mtxt{
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.stxt{
+  font-family: "Mukta", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+/* @media only screen and (max-width: 630px) {
   .bookBar {
     max-width: 380px !important;
   }
   .bookBar input {
     max-width: 100px;
   }
+} */
+@media only screen and (max-width: 920px) {
+  .mtxt{
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-size: 32px !important;
+    font-style: normal;
+  }
+  .stxt{
+    font-family: "Mukta", sans-serif;
+    font-weight: 200;
+    font-size: 25px !important;
+    font-style: normal;
+  }
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 615px) {
+  .mtxt{
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-size: 20px !important;
+    font-style: normal;
+  }
+  .stxt{
+    font-family: "Mukta", sans-serif;
+    font-weight: 200;
+    font-size: 18px !important;
+    font-style: normal;
+  }
+  .bG {
+    background-image: url("../../../public/table.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
+/* @media only screen and (max-width: 420px) {
   .bookBar {
     max-width: 350px !important;
   }
   .bookBar input {
     max-width: 80px;
   }
-}
+} */
