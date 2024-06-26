@@ -64,7 +64,7 @@ const Navbar = () => {
           <span className="logo text-slate-300">Cafe Bites</span>
           <div className="alt-logo">
             <GiCoffeeCup
-              color="black"
+              color="white"
               size={"2.5rem"}
               className="ml-4 flex items-center"
             />
