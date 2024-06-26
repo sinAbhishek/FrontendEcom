@@ -59,11 +59,12 @@
     background-attachment: fixed;
   }
 }
-/* @media only screen and (max-width: 420px) {
-  .bookBar {
-    max-width: 350px !important;
+@media only screen and (max-width: 500px) {
+  .bG {
+    background-image: url("../../../public/table.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+ 
   }
-  .bookBar input {
-    max-width: 80px;
-  }
-} */
+}
