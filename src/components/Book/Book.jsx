@@ -8,7 +8,7 @@ import { redirect, useNavigate } from "react-router-dom";
 const Book = () => {
   const navigate = useNavigate();
   return (
-    <div className="bG h-[80vh] w-11/12 relative rounded-3xl">
+    <div className="bG h-[50vh] md:h-[80vh] w-11/12 relative rounded-3xl">
       <div className=" bg-black opacity-40 absolute top-0 bottom-0 right-0 left-0 rounded-3xl z-0"></div>
       <div className="absolute top-0 bottom-0 right-0 left-0 z-20 flex justify-center items-center">
         <div className=" flex flex-col   ">
