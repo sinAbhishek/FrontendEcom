@@ -20,20 +20,20 @@
   font-style: normal;
 }
 .sub-total-h1{
-  font-family: "Play", sans-serif;
+
   font-weight: 700;
   font-style: normal;
 }
 .chakra-modal__body {
   padding: 0px !important;
-  background-color: rgb(243, 237, 230);
+  background-color: rgb(255, 255, 255);
 }
 .alt-logo {
   display: none;
 }
 .btn-checkout {
-  font-family: "Play", sans-serif;
-  font-weight: 700;
+
+  font-weight: 400;
   font-style: normal;
   transition: 0.5s;
 }

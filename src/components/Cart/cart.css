@@ -1,12 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 .cartIname{
-  font-family: "Play", sans-serif;
-  font-weight: 700;
+  font-family: "Archivo", sans-serif;
+  font-weight: 900;
   font-style: normal;
 }
 .cartPrice{
-  font-family: "Play", sans-serif;
+  font-family: "Archivo", sans-serif;
   font-weight: 700;
+  font-style: normal;
+}
+.cartPrice>span{
+  font-family: "Archivo", sans-serif;
+  font-weight: 900;
   font-style: normal;
 }
 .order {

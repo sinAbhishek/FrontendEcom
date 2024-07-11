@@ -119,22 +119,31 @@ const Navbar = () => {
 
           <DrawerBody>
             {products[0] ? (
-              <div className=" p-2 mt-4">
+              <div className=" p-2 mt-4 ">
                 <div className="">
                   {products.map((product) => (
                     <Cart prop={product} />
                   ))}
                 </div>
-                <div className="final-checkout mt-4">
-                  <h3 className="sub-total-h1 text-lg font-semibold">
-                    Subtotal- <span className="tot-price">{total}</span>$
-                  </h3>
+                <div className="final-checkout absolute bottom-0 py-4 px-2 left-0 right-0 mt-4 bg-slate-100">
+                  <h2 className=" font-extrabold text-slate-600">
+                    Price Details
+                  </h2>
+                  <div className=" flex justify-between items-center mt-4">
+                    <h3 className="sub-total-h1 text-sm text-slate-600 font-semibold">
+                      Subtotal:
+                    </h3>
+                    <span className="tot-price text-slate-600 text-sm font-extrabold">
+                      ${total}
+                    </span>
+                  </div>
+
                   <div className=" flex justify-center mt-4">
                     <button
                       onClick={handle}
-                      className="btn-checkout px-4 w-max bg-slate-950 text-white rounded-full py-1 mx-auto hover:bg-gray-800"
+                      className="btn-checkout px-4 w-max bg-slate-800 text-white rounded-full py-1 mx-auto hover:bg-gray-800"
                     >
-                      CHECKOUT
+                      Checkout
                     </button>
                   </div>
                 </div>
