@@ -7,12 +7,10 @@ import "./home.css";
 const Home = () => {
   return (
     <div className=" flex flex-col justify-center items-center">
-      <Navbar />
       {/* <Section />
       <hr /> */}
       <Featured />
       <Book />
-      <Footer />
     </div>
   );
 };
