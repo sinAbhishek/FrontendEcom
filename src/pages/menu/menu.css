@@ -147,11 +147,11 @@ body {
 }
 @media only screen and (max-width: 550px) {
   .types {
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
   .t1 {
-    margin-bottom: 10px;
+    margin-top: 5px;
   }
 }

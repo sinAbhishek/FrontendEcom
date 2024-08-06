@@ -125,14 +125,6 @@ const Menu = () => {
       {loading && (
         <div className="absolute top-0 left-0 right-0  h-screen">
           <div className="LoadingBg absolute left-0 bottom-0 top-0 right-0 bg-slate-200 bg-cover bg-no-repeat bg z-50 flex items-center justify-center">
-            {/* <ScaleLoader
-              color={"#03ff46"}
-              loading={Loading}
-              width={"3px"}
-              height={"20px"}
-              aria-label="Loading Spinner"
-              data-testid="loader"
-            /> */}
             <div className=" w-48 h-48">
               <Lottie animationData={a1} loop={true} />
             </div>
@@ -142,17 +134,17 @@ const Menu = () => {
 
       <div className="filter">
         <div className="filter-wrapper mt-20">
-          <div className=" types w-screen  h-10 flex  justify-center my-4 ">
+          <div className="  types w-screen  h-10 flex justify-center  my-4 ">
             <button
               onClick={(e) => filter(e)}
-              className="t1 bg-slate-200 text-slate-700 w-[200px] px-4 py-1 rounded-full mr-2 font-semibold border border-blue-300"
+              className="t1 max-[650px]:w-[100px] max-[650px]:text-sm max-[650px]:p-2 bg-slate-200 text-slate-700 w-[200px] px-4 py-1 rounded-full mr-2 font-semibold border border-blue-300"
             >
               All
             </button>
             <select
               name=""
               id=""
-              className="t1 bg-slate-200 text-slate-700 w-[200px] px-4 py-1 rounded-full mr-2 font-semibold border border-blue-300"
+              className="t1 max-[650px]:w-[150px] bg-slate-200 text-slate-700 w-[200px] px-4 py-1 rounded-full mr-2 font-semibold border border-blue-300"
               onChange={(e) => filter(e)}
             >
               <option selected disabled>
@@ -167,7 +159,7 @@ const Menu = () => {
             <select
               name=""
               id=""
-              className=" bg-slate-200 text-slate-700 w-[200px] px-4 py-1 rounded-full  font-semibold border border-blue-300"
+              className=" t1 max-[650px]:w-[150px] bg-slate-200 text-slate-700 w-[200px] px-4 py-1 rounded-full  font-semibold border border-blue-300"
               onChange={(e) => filter(e)}
             >
               <option selected disabled>
@@ -181,7 +173,7 @@ const Menu = () => {
             </select>
           </div>
 
-          <motion.div className="results">
+          <motion.div className="results max-[650px]:mt-4">
             {data[0] && <Result items={data} variantname={childvariants} />}
           </motion.div>
         </div>
