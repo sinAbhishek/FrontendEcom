@@ -3,12 +3,10 @@ import { NavLink } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import { useInView } from "framer-motion";
 import { motion } from "framer-motion";
-const Card = ({ item,variant }) => {
+const Card = ({ item, variant }) => {
   const domref = useRef();
 
   const [array, setarray] = useState([]);
-
-
 
   useEffect(() => {
     if (!domref.current) return;
@@ -27,13 +25,17 @@ const Card = ({ item,variant }) => {
 
   return (
     <motion.div
-    ref={domref}
+      ref={domref}
       style={{ width: "300px" }}
-      className="key mx-4 my-2 h-96 px-2 rounded-xl flex flex-col  bg-white border border-slate-200 relative"
+      className="item_card mx-4 my-2 h-96 px-2 rounded-xl flex flex-col  bg-white border border-slate-200 relative"
       key={item.id}
     >
       <div className=" w-full h-max flex justify-center mt-4 ">
-        <img className="image w-52 h-52 rounded-full border border-white" src={item.image} alt="" />
+        <img
+          className="image w-52 h-52 rounded-full border border-white"
+          src={item.image}
+          alt=""
+        />
       </div>
       <div className=" w-full h-max mt-4  flex flex-col">
         <h2 className=" itemname text-base text-slate-100">{item.name}</h2>
@@ -56,6 +58,8 @@ const Card = ({ item,variant }) => {
   );
 };
 const Result = (props) => {
-  return props.items.map((item) => <Card item={item} variant={props.variantname} />);
+  return props.items.map((item) => (
+    <Card item={item} variant={props.variantname} />
+  ));
 };
 export default Result;

@@ -9,28 +9,28 @@ import ScaleLoader from "react-spinners/ScaleLoader";
 import Animation from "../../data/image/loading.gif";
 import { motion } from "framer-motion";
 import Lottie from "lottie-react";
-import a1 from "../../data/loading.json"
+import a1 from "../../data/loading.json";
 import { useInView } from "framer-motion";
 const Menu = () => {
   const y = "Hot Coffees";
-  const ref=useRef(null)
+  const ref = useRef(null);
   const [type, setType] = useState("");
   const [open, setopen] = useState(false);
   const [Loading, setloading] = useState(true);
-  const { data,loading } = useFetch(`/Brew?type=${type}`);
+  const { data, loading } = useFetch(`/Brew?type=${type}`);
   const [items, setitems] = useState("");
   const [categoryDrink, setcategoryDrink] = useState("");
   const [categoryFood, setcategoryFood] = useState("");
   const [beverage, setbeverage] = useState(false);
   const [food, setfood] = useState(false);
-  const isInView = useInView(ref,{amount:0.4})
+  const isInView = useInView(ref, { amount: 0.4 });
   const Url = process.env.REACT_APP_Url;
   var Drinks = [];
   var Food = [];
   var item = "";
- 
+
   const mainvariants = {
-    hidden: { x:0 },
+    hidden: { x: 0 },
     visible: {
       x: 0,
       transition: {
@@ -38,7 +38,7 @@ const Menu = () => {
         when: "beforeChildren",
         staggerChildren: 0.5,
         duration: 0.8,
-        type:"spring"
+        type: "spring",
       },
     },
   };
@@ -58,7 +58,6 @@ const Menu = () => {
   };
   useEffect(() => {
     data && setloading(false);
-   
   }, [data]);
 
   useEffect(() => {
@@ -134,44 +133,56 @@ const Menu = () => {
               aria-label="Loading Spinner"
               data-testid="loader"
             /> */}
-              <div className=" w-48 h-48">
-      <Lottie animationData={a1} loop={true}  />
-      </div>
+            <div className=" w-48 h-48">
+              <Lottie animationData={a1} loop={true} />
+            </div>
           </div>
         </div>
       )}
-      <Navbar />
+
       <div className="filter">
         <div className="filter-wrapper mt-20">
           <div className=" types w-screen  h-10 flex  justify-center my-4 ">
+            <button
+              onClick={(e) => filter(e)}
+              className="t1 bg-slate-200 text-slate-700 w-[200px] px-4 py-1 rounded-full mr-2 font-semibold border border-blue-300"
+            >
+              All
+            </button>
             <select
               name=""
               id=""
-              className="t1 bg-slate-800 text-pink-100 w-max px-4 py-1 rounded-md mr-2 font-semibold"
+              className="t1 bg-slate-200 text-slate-700 w-[200px] px-4 py-1 rounded-full mr-2 font-semibold border border-blue-300"
               onChange={(e) => filter(e)}
             >
               <option selected disabled>
                 Drinks
               </option>
 
-              {categoryDrink && categoryDrink.map((c) => <option>{c}</option>)}
+              {categoryDrink &&
+                categoryDrink.map((c) => (
+                  <option className=" bg-slate-50">{c}</option>
+                ))}
             </select>
             <select
               name=""
               id=""
-              className=" bg-slate-800 text-pink-100 w-max px-4 py-1 rounded-md  font-semibold"
+              className=" bg-slate-200 text-slate-700 w-[200px] px-4 py-1 rounded-full  font-semibold border border-blue-300"
               onChange={(e) => filter(e)}
             >
               <option selected disabled>
                 Foods
               </option>
 
-              {categoryFood && categoryFood.map((c) => <option>{c}</option>)}
+              {categoryFood &&
+                categoryFood.map((c) => (
+                  <option className=" bg-slate-50">{c}</option>
+                ))}
             </select>
           </div>
-        
-          <motion.div  className="results">
-            {data[0]&&<Result items={data} variantname={childvariants} />}
+
+          <motion.div className="results">
+            {data[0] && <Result items={data} variantname={childvariants} />}
           </motion.div>
         </div>
       </div>
