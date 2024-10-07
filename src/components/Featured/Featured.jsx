@@ -3,7 +3,7 @@ import "./featured.css";
 import img1 from "../../data/image/frapucino.png";
 import img2 from "../../data/image/nitro cold.png";
 import img3 from "../../data/image/white chocolate.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 const Featured = () => {
   return (
     <div className="featured flex justify-center flex-col  ">

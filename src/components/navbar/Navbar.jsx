@@ -58,7 +58,7 @@ const Navbar = () => {
     dispatch({ type: "LOGOUT" });
   };
   return (
-    <div className="Navbar">
+    <div className="Navbar z-40">
       <div className="Container">
         <div className="left">
           <span className="logo text-slate-300">Cafe Bites</span>

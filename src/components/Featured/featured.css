@@ -22,9 +22,9 @@
   animation: 10s surf infinite;
   /* transform: translateX(-25%); */
 }
-.content:hover {
+/* .content:hover {
   animation-play-state: paused;
-}
+} */
 .des-img {
   width: 100%;
   height: 500px;
