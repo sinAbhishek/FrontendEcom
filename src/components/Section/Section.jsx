@@ -31,28 +31,6 @@ const Section = () => {
       <div className="w-1/2 flex h-[5%]">
         <div className=""></div>
       </div>
-
-      {/* <div className="w-1/2 flex justify-center items-center">
-        <div className=" w-4/5 h-full flex flex-col justify-center items-center">
-          <div className="txtlog text-5xl   text-slate-100"> “</div>
-          <hr className="  bg-white w-full" />
-          <br />
-          <h2 className="txtlog text-5xl   text-slate-300">
-            Life is like a cup of coffee. It's all about how you make it{" "}
-          </h2>
-          <br />
-          <hr className="  bg-white w-full" />
-          <div className="txtlog text-5xl   text-slate-100"> „</div>
-        </div>
-      </div>
-      <div className="w-1/2 flex h-full">
-        <img
-          loading="lazy"
-          className="w-full h-full bg-contain"
-          src={cfspill}
-          alt=""
-        />
-      </div> */}
     </div>
   );
 };
