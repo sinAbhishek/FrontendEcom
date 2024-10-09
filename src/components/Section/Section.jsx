@@ -8,7 +8,7 @@ const Section = () => {
   const navigate = useNavigate();
   return (
     <div className=" h-screen w-screen relative max-[550px]:h-[600px]    flex flex-col justify-between bg">
-      <div className="w-full flex h-[95%] relative items-center">
+      <div className="w-full flex h-[90%] relative items-center">
         <img
           loading="lazy"
           className="w-full h-full top-0 left-0 right-0 bg-contain absolute"
@@ -28,7 +28,7 @@ const Section = () => {
           </button>
         </div>
       </div>
-      <div className="w-1/2 flex h-[5%]">
+      <div className="w-full flex h-[10%] bg-[#cbc4b8]">
         <div className=""></div>
       </div>
     </div>
