@@ -1,8 +1,6 @@
 import React from "react";
 import "./section.css";
-import cfspill from "../../data/image/coffee332.jpg";
-import cbeans from "../../data/image/My project.png";
-import { AiOutlineShoppingCart } from "react-icons/ai";
+
 import { NavLink, useNavigate } from "react-router-dom";
 const Section = () => {
   const navigate = useNavigate();
