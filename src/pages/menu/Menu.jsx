@@ -115,11 +115,11 @@ const Menu = () => {
   //   setfood(true);
   //   setType("");
   // };
-  // const showAll = () => {
-  //   setbeverage(false);
-  //   setfood(false);
-  //   setType("");
-  // };
+  const showAll = () => {
+    setbeverage(false);
+    setfood(false);
+    setType("");
+  };
   return (
     <div className="main relative">
       {loading && (
