@@ -4,9 +4,7 @@ import "./menu.css";
 import axios from "axios";
 import Result from "../../components/Search result/Search_result";
 import useFetch from "../../hooks/useFetch.js";
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import ScaleLoader from "react-spinners/ScaleLoader";
-import Animation from "../../data/image/loading.gif";
+
 import { motion } from "framer-motion";
 import Lottie from "lottie-react";
 import a1 from "../../data/loading.json";
