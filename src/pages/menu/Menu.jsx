@@ -93,10 +93,10 @@ const Menu = () => {
     Food[0] && call();
   }, [Food]);
 
-  const call = () => {
-    console.log(categoryDrink);
-    console.log(Food);
-  };
+  // const call = () => {
+  //   console.log(categoryDrink);
+  //   console.log(Food);
+  // };
 
   const filter = (e) => {
     e.preventDefault();
