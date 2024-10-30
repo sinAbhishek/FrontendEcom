@@ -103,15 +103,15 @@ const Menu = () => {
     setType(e.target.value);
     setopen(!open);
   };
-  // const showDrinks = () => {
-  //   setbeverage(true);
-  //   setfood(false);
-  // };
-  // const showFood = () => {
-  //   setbeverage(false);
-  //   setfood(true);
-  //   setType("");
-  // };
+  const showDrinks = () => {
+    setbeverage(true);
+    setfood(false);
+  };
+  const showFood = () => {
+    setbeverage(false);
+    setfood(true);
+    setType("");
+  };
   const showAll = () => {
     setbeverage(false);
     setfood(false);
