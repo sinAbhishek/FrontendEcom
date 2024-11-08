@@ -26,22 +26,6 @@ const Book = () => {
             </div>
 
             <div className="bookBar flex justify-center mt-2">
-              {/* <div className="flex items-center">
-              <BsTelephone color="#8a1c15" size={"1.1rem"} />
-              <input
-                className=" ml-2 bg-transparent outline-none  "
-                type="text"
-                placeholder="Your phone "
-              />
-            </div>
-            <div className="flex items-center">
-              <GoPerson color="#8a1c15" size={"1.1rem"} />
-              <input
-                className=" ml-2 bg-transparent outline-none "
-                type="text"
-                placeholder="Your name "
-              />
-            </div> */}
               <button
                 onClick={() => navigate("/menu")}
                 className=" flex justify-center items-center w-max hover:scale-105 font-normal hover:bg-black hover:text-white transition duration-105 bg-transparent h-4/5 rounded-full px-4 py-2 text-slate-100 border border-white"
