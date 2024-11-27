@@ -1,6 +1,8 @@
 import React from "react";
 import "./section.css";
-
+import { GiCoffeeCup } from "react-icons/gi";
+import { CiCoffeeCup } from "react-icons/ci";
+import { GiCakeSlice } from "react-icons/gi";
 import { NavLink, useNavigate } from "react-router-dom";
 const Section = () => {
   const navigate = useNavigate();
@@ -27,7 +29,20 @@ const Section = () => {
         </div>
       </div>
       <div className="w-full flex h-[10%] bg-[#cbc4b8]">
-        <div className=""></div>
+        <div className="w-full justify-center flex items-center">
+          <div className="w-max justify-center flex flex-col items-center ">
+            <GiCoffeeCup size={"1.9rem"} />
+            <p className=" text-xs font-semibold">Hot Coffee</p>
+          </div>
+          <div className="w-max justify-center flex flex-col items-center px-12 ">
+            <CiCoffeeCup size={"1.9rem"} />
+            <p className=" text-xs font-semibold">Hot Coffee</p>
+          </div>
+          <div className="w-max justify-center flex flex-col items-center ">
+            <GiCakeSlice size={"1.9rem"} />
+            <p className=" text-xs font-semibold">Hot Coffee</p>
+          </div>
+        </div>
       </div>
     </div>
   );
