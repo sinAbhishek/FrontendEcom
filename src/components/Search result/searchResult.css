@@ -1,15 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-.itemname{
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.itemname {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 700;
   font-style: normal;
-
 }
 .item_card {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  background: rgb(255,255,255);
-/* background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(220, 71, 71) 100%); */
-background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(141, 78, 78) 100%);
+  background: rgb(255, 255, 255);
+  /* background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(220, 71, 71) 100%); */
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(141, 78, 78) 100%
+  );
   transition: ease-in-out 0.1s;
   opacity: 0%;
 }
@@ -21,8 +24,7 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(141, 78, 78) 100
   opacity: 100%;
   transition: 0.8s;
 }
-.show {
-}
+
 @media only screen and (max-width: 1000px) {
   .image {
     width: 110px;

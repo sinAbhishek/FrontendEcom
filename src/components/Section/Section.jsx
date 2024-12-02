@@ -34,7 +34,7 @@ const Section = () => {
             <GiCoffeeCup size={"1.9rem"} />
             <p className=" text-xs font-semibold">Hot Coffee</p>
           </div>
-          <div className="w-max justify-center flex flex-col items-center px-12 ">
+          <div className="w-max justify-center flex flex-col items-center px-16 ">
             <CiCoffeeCup size={"1.9rem"} />
             <p className=" text-xs font-semibold">Hot Coffee</p>
           </div>
