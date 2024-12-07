@@ -1,6 +1,6 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../../components/navbar/Navbar";
-import { useState } from "react";
+
 import Cart from "../../components/Cart/Cart";
 import { CartContext } from "../../context/CartContext";
 import { useContext } from "react";
