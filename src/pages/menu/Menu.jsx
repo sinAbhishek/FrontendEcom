@@ -9,7 +9,6 @@ import Lottie from "lottie-react";
 import a1 from "../../data/loading.json";
 import { useInView } from "framer-motion";
 const Menu = () => {
-  // const y = "Hot Coffees";
   const ref = useRef(null);
   const [type, setType] = useState("");
   const [open, setopen] = useState(false);
