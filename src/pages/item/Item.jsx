@@ -48,14 +48,6 @@ const Item = () => {
 
   return loading ? (
     <div className="LoadingBg absolute left-0 bottom-0 top-0 right-0 bg-slate-200 bg-cover bg-no-repeat bg z-50 flex items-center justify-center">
-      {/* <ScaleLoader
-        color={"#03ff46"}
-        loading={loading}
-        width={"3px"}
-        height={"20px"}
-        aria-label="Loading Spinner"
-        data-testid="loader"
-      /> */}
       <div className=" w-48 h-48">
         <Lottie animationData={a1} loop={true} />
       </div>
