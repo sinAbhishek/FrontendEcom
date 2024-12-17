@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 import { CartContext } from "../../context/CartContext";
 import { SiBuymeacoffee } from "react-icons/si";
-import ScaleLoader from "react-spinners/ScaleLoader";
+
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import Lottie from "lottie-react";
 import a1 from "../../data/loading.json";
