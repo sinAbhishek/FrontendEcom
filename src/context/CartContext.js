@@ -8,7 +8,7 @@ const INITIAL_STATE = {
 };
 
 export const CartContext = createContext(INITIAL_STATE);
-
+//added reducer
 const CartReducer = (state, action) => {
   switch (action.type) {
     case "AddToCart":
